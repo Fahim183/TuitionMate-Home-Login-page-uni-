@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TuitionMate | Better Learning, Brighter Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html"><i class="fa-solid fa-graduation-cap"></i><span>TuitionMate</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="#subjects">Courses</a>
+      <a href="#features">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="auth-buttons">
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode"><i class="fa-solid fa-moon"></i></button>
+      <a class="btn-outline" href="login.html">Login</a>
+      <a class="btn-primary" href="signup.html">Sign Up</a>
+    </div>
+    <div class="mobile-menu">
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu-panel"><i class="fa-solid fa-bars"></i></button>
+      <nav class="mobile-menu-panel" id="mobile-menu-panel" aria-label="Mobile navigation">
+        <a href="index.html">Home</a><a href="#subjects">Courses</a><a href="#features">About</a><a href="#contact">Contact</a>
+        <a href="login.html">Login</a><a href="signup.html">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <span class="eyebrow"><i class="fa-solid fa-sparkles"></i> Your learning journey starts here</span>
+        <h1 class="hero-title">Better Learning,<br><span>Brighter Future</span></h1>
+        <p class="hero-description">Find the best tutors, manage your classes, and track your progress — all in one place.</p>
+        <div class="hero-actions">
+          <a class="btn-hero-primary" href="signup.html">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn-hero-secondary" href="#features">Learn More</a>
+        </div>
+        <div class="hero-trust"><span><i class="fa-solid fa-circle-check"></i> Flexible learning</span><span><i class="fa-solid fa-circle-check"></i> Trusted tutors</span></div>
+        <div class="hero-stats">
+          <div class="stat"><strong class="counter" data-target="1200" data-suffix="+">0</strong><span>Students</span></div>
+          <div class="stat"><strong class="counter" data-target="150" data-suffix="+">0</strong><span>Tutors</span></div>
+          <div class="stat"><strong class="counter" data-target="45" data-suffix="+">0</strong><span>Courses</span></div>
+        </div>
+      </div>
+      <div class="hero-graphic" aria-label="Student studying illustration">
+        <div class="graphic-orbit orbit-one"></div><div class="graphic-orbit orbit-two"></div>
+        <div class="float-icon float-bulb"><i class="fa-regular fa-lightbulb"></i></div>
+        <div class="float-icon float-book"><i class="fa-solid fa-book-open"></i></div>
+        <div class="study-card">
+          <div class="study-card-top"><span class="mini-dot"></span><span class="mini-dot"></span><span class="mini-dot"></span><span class="study-label">STUDY SPACE</span></div>
+          <div class="student-illustration">
+            <div class="plant"><span></span><span></span><span></span><b></b></div>
+            <div class="student-head"><div class="hair"></div><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="smile"></span></div>
+            <div class="student-body"><div class="arm arm-left"></div><div class="arm arm-right"></div></div>
+            <div class="laptop"><div><i class="fa-solid fa-graduation-cap"></i></div></div>
+            <div class="book-stack"><span></span><span></span><span></span></div>
+          </div>
+          <div class="progress-panel"><div><strong>Weekly progress</strong><span>Keep it up!</span></div><div class="progress-ring">78%</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features-section section-wrap">
+      <div class="section-header"><span class="eyebrow">MADE FOR YOUR SUCCESS</span><h2 class="section-title">Everything you need to learn better</h2><p class="section-subtitle">Everything you need for a smooth tuition experience.</p></div>
+      <div class="features-grid">
+        <article class="feature-card"><div class="feature-icon-wrapper icon-blue"><i class="fa-solid fa-user-tie"></i></div><h3>Find Tutors</h3><p>Choose from experienced tutors who match your learning goals.</p></article>
+        <article class="feature-card"><div class="feature-icon-wrapper icon-green"><i class="fa-solid fa-calendar-days"></i></div><h3>Manage Classes</h3><p>Keep track of class schedules, lessons, and important updates.</p></article>
+        <article class="feature-card"><div class="feature-icon-wrapper icon-purple"><i class="fa-solid fa-chart-line"></i></div><h3>Track Progress</h3><p>Monitor your learning progress and celebrate every milestone.</p></article>
+        <article class="feature-card"><div class="feature-icon-wrapper icon-orange"><i class="fa-solid fa-comments"></i></div><h3>Direct Communication</h3><p>Stay connected with tutors and students in one place.</p></article>
+      </div>
+    </section>
+
+    <section id="subjects" class="subjects-section section-wrap">
+      <div class="section-header"><span class="eyebrow">EXPLORE AND GROW</span><h2 class="section-title">Popular Subjects</h2><p class="section-subtitle">Explore subjects and find support for your next big achievement.</p></div>
+      <div class="subject-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="subject-search" class="subject-search-input" placeholder="Search subjects (e.g. Physics)" aria-label="Search subjects" autocomplete="off">
+      </div>
+      <div class="subjects-tags" id="subjects-list"><span class="subject-tag"><i class="fa-solid fa-calculator"></i> Mathematics</span><span class="subject-tag"><i class="fa-solid fa-atom"></i> Physics</span><span class="subject-tag"><i class="fa-solid fa-flask"></i> Chemistry</span><span class="subject-tag"><i class="fa-solid fa-dna"></i> Biology</span><span class="subject-tag"><i class="fa-solid fa-language"></i> English</span><span class="subject-tag"><i class="fa-solid fa-laptop-code"></i> Computer Science</span></div>
+      <p class="no-subject" id="no-subject" role="status" aria-live="polite" hidden><i class="fa-regular fa-face-frown"></i> No subject found</p>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="logo" href="index.html"><i class="fa-solid fa-graduation-cap"></i><span>TuitionMate</span></a><p class="footer-tagline">Learn Today, Lead Tomorrow.</p></div>
+      <nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="#subjects">Courses</a><a href="#features">About</a><a href="mailto:hello@tuitionmate.example">Contact</a></nav>
+      <div class="social-links"><a href="https://www.facebook.com/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.instagram.com/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a><a href="https://www.youtube.com/" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 FAHIM. All rights reserved.</p></div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="color-picker" id="color-picker">
+    <button type="button" class="color-picker-toggle" id="color-picker-toggle" aria-label="Change accent colour" aria-expanded="false" aria-controls="color-options"><i class="fa-solid fa-palette"></i></button>
+    <div class="color-options" id="color-options" role="group" aria-label="Accent colour" hidden>
+      <button type="button" class="color-swatch swatch-blue" data-color="blue" aria-label="Blue" aria-pressed="true"></button>
+      <button type="button" class="color-swatch swatch-green" data-color="green" aria-label="Green" aria-pressed="false"></button>
+      <button type="button" class="color-swatch swatch-purple" data-color="purple" aria-label="Purple" aria-pressed="false"></button>
+      <button type="button" class="color-swatch swatch-orange" data-color="orange" aria-label="Orange" aria-pressed="false"></button>
+      <button type="button" class="color-swatch swatch-rose" data-color="rose" aria-label="Rose" aria-pressed="false"></button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
